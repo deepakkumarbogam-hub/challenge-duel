@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Challenge Duel — 20 Round Party Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand">🎭 <span>CHALLENGE DUEL</span></div>
+    <div class="round-pill" id="roundPill">ROUND 0 / 20</div>
+    <button class="reset-btn" id="resetBtn">↻ Reset</button>
+  </header>
+
+  <main id="appMain"></main>
+</div>
+
+<div class="modal hidden" id="confirmModal">
+  <div class="modal-card">
+    <h2>Reset the game?</h2>
+    <p>All scores, rounds, and completed tasks will be cleared.</p>
+    <div class="modal-actions">
+      <button class="secondary" id="cancelReset">Cancel</button>
+      <button class="danger" id="confirmReset">Reset Game</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
