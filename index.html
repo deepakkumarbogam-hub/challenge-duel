@@ -1,33 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Challenge Duel — 20 Round Party Game</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Challenge Duel ❤️</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="hearts"></div><div class="stars"></div>
 <div class="app">
-  <header class="topbar">
-    <div class="brand">🎭 <span>CHALLENGE DUEL</span></div>
-    <div class="round-pill" id="roundPill">ROUND 0 / 20</div>
-    <button class="reset-btn" id="resetBtn">↻ Reset</button>
-  </header>
-
-  <main id="appMain"></main>
+<header><div class="brand">❤️ CHALLENGE DUEL ❤️</div><div><span id="roundPill">ROUND 0 / 20</span><button id="resetBtn">↻ Reset</button></div></header>
+<main id="appMain"></main>
 </div>
-
-<div class="modal hidden" id="confirmModal">
-  <div class="modal-card">
-    <h2>Reset the game?</h2>
-    <p>All scores, rounds, and completed tasks will be cleared.</p>
-    <div class="modal-actions">
-      <button class="secondary" id="cancelReset">Cancel</button>
-      <button class="danger" id="confirmReset">Reset Game</button>
-    </div>
+<button class="timer-fab" id="timerFab">⏱️</button>
+<div class="timer-panel hidden" id="timerPanel">
+  <div class="timer-head"><b>⏱️ Challenge Timer</b><button id="closeTimer">×</button></div>
+  <div id="timerDisplay">00:00</div>
+  <div class="timer-options">
+    <button data-min="3">3 min</button><button data-min="5">5 min</button>
+    <button data-min="8">8 min</button><button data-min="10">10 min</button>
   </div>
+  <div class="timer-actions"><button class="success" id="startTimer">▶ Start</button><button class="secondary" id="pauseTimer">Ⅱ Pause</button><button class="danger" id="stopTimer">■ Stop</button></div>
+  <small>Tick sounds play while running. When time is up, a random celebration melody plays.</small>
 </div>
-
+<div class="modal hidden" id="confirmModal"><div class="modal-card">
+<h2>Restart the duel? 🔄</h2><p>This clears scores, rounds and completed tasks.</p>
+<button class="secondary" id="cancelReset">Cancel</button> <button class="danger" id="confirmReset">Reset Game</button>
+</div></div>
 <script src="script.js"></script>
-</body>
-</html>
+</body></html>

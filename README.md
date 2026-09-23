@@ -1,25 +1,17 @@
-# Challenge Duel
+# Challenge Duel ❤️
 
-A client-only 20-round, two-player party challenge game.
+## Edit the tasks
+Open `script.js` and edit only `MAIN_TASKS` at the top.
+There are 70 placeholders. Replace them with your 70 real tasks.
 
-## Run
-Open `index.html` in a browser.
+The number of vault boxes automatically matches the number of tasks in `MAIN_TASKS`.
+Completed tasks are removed permanently; remaining tasks are reshuffled every round.
+Numbers may repeat, but completed tasks never repeat.
+
+## Features
+20 rounds, 2 players, 100 points for main task, 60 for punishment, random/custom punishment selection, animated love background, success celebrations, reset, and a 3/5/8/10-minute timer with tick sounds and a generated random celebration melody when time expires.
 
 ## GitHub Pages
-1. Create a GitHub repository.
-2. Upload `index.html`, `style.css`, and `script.js`.
-3. Go to Settings → Pages.
-4. Select the `main` branch and `/ (root)`.
-5. Save. GitHub will publish the site.
-
-No AWS, backend, database, or paid service is required.
-
-## Game rules
-- 50 main tasks start available.
-- Each completed main task is permanently removed from the shared pool.
-- Numbers can repeat, but completed tasks cannot.
-- Remaining tasks are shuffled and reassigned to numbers after each round.
-- Main task: +100 points.
-- Punishment: +60 points.
-- 20 rounds maximum.
-- Maximum base score per player is 2000 only if they personally complete all 20 main tasks; bonus systems can be added later.
+Upload `index.html`, `style.css`, and `script.js` to the repository root.
+Settings → Pages → Deploy from a branch → `main` → `/ (root)` → Save.
+After future commits, GitHub Pages automatically publishes the changes.
